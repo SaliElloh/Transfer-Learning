@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from scipy.spatial import distance as dist
 from imutils import face_utils
 from imutils.video import VideoStream
@@ -12,7 +11,6 @@ import cv2
 # import blinkBuzz as bb
 # import BLEthread as bt
 import threading
-=======
 import os
 import pandas as pd
 import tarfile 
@@ -49,7 +47,6 @@ combined_data = process_csv_files(csv_dir)
 
 # # Display the combined DataFrame
 # print(combined_data.head())
->>>>>>> 5335d6d8ae49a82b416f4a2061f4f34680673802
 
 
 # initialize the frame counters and the total number of eye closes at different stages
