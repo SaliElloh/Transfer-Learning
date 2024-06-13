@@ -12,9 +12,10 @@ temp_dir = 'data/temp'
 orig_dir = 'data/images'
 train_dir = 'data/train'
 val_dir = 'data/val'
-
-drivFace_images = './datasets/Drivface/DrivImages'
-drivFace_annotations = './datasets/DrivFace/drivPoints.txt'
+drivFace_images = "C:/Users/selloh/Desktop/Datasets/DrivFace/DrivImages"
+# drivFace_images = './datasets/Drivface/DrivImages'
+# drivFace_annotations = './datasets/DrivFace/drivPoints.txt'
+drivFace_annotations = 'C:/Users/selloh/Desktop/Datasets/DrivFace/drivPoints.txt'
 
 hdf5_path = 'DrivFace.h5'
 
@@ -22,7 +23,7 @@ hdf5_path = 'DrivFace.h5'
 # landmark_predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 
 def load_dataset():
-    return None
+     returnNone
 
 def load_annotations(image_path):
     base_name = os.path.basename(image_path).split('.')[0]
@@ -107,4 +108,5 @@ image_paths = glob(os.path.join(drivFace_images, '*.jpg'))
 
 for image_path in image_paths:
     image, landmarks, pose = preprocess_image(image_path)
+    print(landmarks)
 
